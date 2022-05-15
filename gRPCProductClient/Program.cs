@@ -10,7 +10,9 @@ ProductClient productClient = new ProductClient();
 while (true)
 {
     Console.Clear();
+
     Console.WriteLine("\n1-GetProduct => ID'ye göre ürün arama.\n2-GetAllProducts => Tüm ürünleri getir.\n3-SearchProduct => İsme göre ürün arama.\nLütfen seçim yapınız.");
+
     var choice = Console.ReadKey();
     Console.Clear();
 
