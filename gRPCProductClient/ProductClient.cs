@@ -43,10 +43,8 @@ namespace gRPCProductClient
             {
                 await foreach (var response in searchreply.ResponseStream.ReadAllAsync(token.Token))
                 {
-                    await Task.Delay(TimeSpan.FromSeconds(1));
 
                     Console.WriteLine(response.ProductName);
-
 
                 }
                 Console.WriteLine("Tüm ürünler çekildi.");
@@ -59,7 +57,6 @@ namespace gRPCProductClient
 
                 throw;
             }
-
 
         }
 
