@@ -1,17 +1,12 @@
 ﻿using Grpc.Core;
 using Grpc.Net.Client;
 using ProductProto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace gRPCProductClient
 {
     internal class ProductClient
     {
-    
+
         private GrpcChannel grpcChannel;
         private Product.ProductClient productClient;
 
@@ -68,5 +63,5 @@ namespace gRPCProductClient
 
         }
 
-    }  
+    }
 }

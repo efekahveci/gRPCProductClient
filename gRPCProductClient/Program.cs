@@ -1,11 +1,7 @@
-﻿
-using Grpc.Core;
-using Grpc.Net.Client;
-using gRPCProductClient;
-using ProductProto;
+﻿using gRPCProductClient;
 
 
-ProductClient productClient = new ProductClient(); 
+ProductClient productClient = new ProductClient();
 
 while (true)
 {
@@ -24,7 +20,7 @@ while (true)
             break;
         case '2':
             Console.WriteLine("Unary Call\n");
-            Console.WriteLine(await productClient.GetAllProducts());      
+            Console.WriteLine(await productClient.GetAllProducts());
             break;
         case '3':
             Console.WriteLine("Server Streaming Call\n");
